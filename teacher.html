@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Teacher Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Teacher Dashboard</h1>
+        
+        <div class="card">
+            <h2>Create Assignment</h2>
+            <input type="text" id="assignment-name" placeholder="Assignment Name">
+            <textarea id="description" placeholder="Description"></textarea>
+            <input type="datetime-local" id="due_date">
+            <button onclick="createAssignment()">Create Assignment</button>
+            <p id="assignment-error" style="color: red;"></p>
+        </div>
+        
+        <div class="card">
+            <h2>Questionnaire Results</h2>
+            <p>Next update in: <span id="countdown">30</span> seconds</p>
+            <ul id="questionnaire-list"></ul>
+        </div>
+        
+        <div class="card">
+            <h2>Register Students to Clubs</h2>
+            <h3>All Students</h3>
+            <ul id="all-students-list"></ul>
+            <input type="text" id="student-ids" placeholder="Enter student IDs (e.g., 2,3)">
+            <select id="club-select">
+                <option value="">Select a club</option>
+                <option value="1">Press Club</option>
+                <option value="2">Jet Club</option>
+            </select>
+            <button onclick="registerStudentsToClub()">Register</button>
+            <p id="register-error" style="color: red;"></p>
+            <h3>Registered Students</h3>
+            <ul id="registered-list"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

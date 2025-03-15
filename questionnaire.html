@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Club Registration Questionnaire</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Club Registration</h1>
+        <form id="questionnaire-form">
+            <label>Can you speak in public?</label>
+            <select name="public-speaking">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+            <label>Best subject?</label>
+            <select name="best-subject">
+                <option value="English">English</option>
+                <option value="Maths">Maths</option>
+            </select>
+            <label>Do you love technology?</label>
+            <select name="love-tech">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+            <label>Do you enjoy writing?</label>
+            <select name="enjoy-writing">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+            <label>Are you interested in engineering?</label>
+            <select name="interest-engineering">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+            <button type="button" onclick="submitQuestionnaire()">Submit</button>
+        </form>
+        <p id="form-error" style="color: red;"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
