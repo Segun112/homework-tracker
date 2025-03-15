@@ -1,0 +1,11 @@
+[
+  {
+    "id": 1,
+    "teacher_id": "2",
+    "name": "chemistry",
+    "description": "define and readup on organic chemistry",
+    "due_date": "2025-03-16T00:00",
+    "points": 10,
+    "penalty": 5
+  }
+]

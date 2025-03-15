@@ -1,0 +1,11 @@
+[
+  {
+    "id": 1,
+    "teacher_id": "2",
+    "name": "jetclub",
+    "student_ids": [
+      "2",
+      "3"
+    ]
+  }
+]
